@@ -7,8 +7,9 @@
  */
 
 require_once 'connect.php';
-require_once 'session_start.php';
-
+if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
+    Redirect::to('index.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +19,7 @@ require_once 'session_start.php';
     <?php include 'headerScripts.php'?>
 </head>
 <body>
+<?php include 'navBar.php'?>
     <div class="container">
         <div class="jumbotron col-lg-6 col-lg-offset-3">
 <?php
@@ -54,10 +56,23 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
     $tdb->query("select username from user where username = ? AND password = ?",array($username,$password));
     if($tdb->count()){
         $_SESSION['isLoggedIn'] = true;
-        echo 'Login Successfull';
-        echo "<a href='logout.php'>logout</a>";
+        $utype = DB::getInstance();
+        $utype->query("select utype from user where username = ?",array($username));
+        $temp = $utype->results()[0]->utype;
+        if($temp=="admin"){
+            $_SESSION['admin'] = true;
+            Redirect::to('adminDashboard.php');
+        }elseif($temp=="teacher"){
+            $_SESSION['teacher'] = true;
+            Redirect::to('teacherDashboard.php');
+        }else{
+            $_SESSION['student'] = true;
+            Redirect::to('studentDashboard.php');
+        }
+//        echo 'Login Successfull';
+//        echo "<a href='logout.php'>logout</a>";
     }else{
-        echo 'Credentials doesn\'t match';
+        echo '<script type="text/javascript">alert("Credentials doesn\'t match")</script>';
     }
 }
 
@@ -65,5 +80,6 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
 ?>
         </div>
     </div>
+    <?php include 'footerScripts.php'?>
 </body>
 </html>

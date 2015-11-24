@@ -6,8 +6,10 @@
  * Time: 3:47 PM
  */
 
-require_once 'classes/DB.php';
-
+spl_autoload_register(function ($class) {
+    include 'classes/' . $class . '.php';
+});
+session_start();
 $connect = DB::getInstance();
 //$host = 'localhost';
 //$username = 'root';

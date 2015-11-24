@@ -6,7 +6,6 @@
  * Time: 2:57 PM
  */
 require_once 'connect.php';
-require_once 'session_start.php';
 
 session_destroy();
-header("Location: login.php");
+Redirect::to('login.php');

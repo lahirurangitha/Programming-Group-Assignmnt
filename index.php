@@ -7,10 +7,29 @@
  */
 
 require_once 'connect.php';
-require_once 'session_start.php';
 
 if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
-    echo 'this is your profile';
-}else{
-    header("Location: login.php");
+    if(isset($_SESSION['admin']) && $_SESSION['admin']==true){
+        Redirect::to('adminDashboard.php');
+    }elseif(isset($_SESSION['teacher']) && $_SESSION['teacher']==true){
+        Redirect::to('teacherDashboard.php');
+    }elseif(isset($_SESSION['student']) && $_SESSION['student']==true){
+        Redirect::to('studentDashboard.php');
+    }
 }
+?>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Home | Page</title>
+    <?php include 'headerScripts.php'?>
+</head>
+<body>
+<?php include 'navBar.php'?>
+<div>
+<h1>Home | page</h1>
+</div>
+<?php include 'footerScripts.php'?>
+</body>
+</html>

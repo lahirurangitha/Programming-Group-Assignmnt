@@ -47,30 +47,33 @@ if(isset($_POST['username'])) {
 <head lang="en">
     <meta charset="UTF-8">
     <title>Register | Page</title>
+    <?php include 'headerScripts.php'?>
 </head>
 <body>
-<div id="regForm">
-    <h1>Signup</h1>
-    <form action="" method="post">
+<?php include 'navBar.php'?>
+<div class="container">
+<div class="jumbotron col-lg-6 col-lg-offset-3" id="regForm">
+    <h3>Signup</h3>
+    <form action="" method="post" class="form-horizontal">
         <div>
             <label>Username</label>
-            <input id="username" name="username" type="text" placeholder="Choose Username" required>
+            <input class="form-control" id="username" name="username" type="text" placeholder="Choose Username" required>
         </div>
         <div>
             <label>Password</label>
-            <input id="password" name="password" type="password" placeholder="Choose Password" required>
+            <input class="form-control" id="password" name="password" type="password" placeholder="Choose Password" required>
         </div>
         <div>
             <label>Re-Password</label>
-            <input id="repassword" name="repassword" type="password" placeholder="Re-Enter password" required>
+            <input class="form-control" id="repassword" name="repassword" type="password" placeholder="Re-Enter password" required>
         </div>
         <div>
             <label>E-Mail</label>
-            <input id="email" name="email" type="email" placeholder="E-mail" required>
+            <input class="form-control" id="email" name="email" type="email" placeholder="E-mail" required>
         </div>
         <div>
             <label for="utype">Select user type</label>
-            <select id="utype" name="utype" required>
+            <select class="form-control" id="utype" name="utype" required>
                 <option></option>
                 <option value="admin">Administrator</option>
                 <option value="teacher">Teacher</option>
@@ -79,29 +82,31 @@ if(isset($_POST['username'])) {
         </div>
         <div>
             <label>First Name</label>
-            <input id="fname" name="fname" type="text" placeholder="First Name" required>
+            <input class="form-control" id="fname" name="fname" type="text" placeholder="First Name" required>
         </div>
         <div>
             <label>Last Name</label>
-            <input id="lname" name="lname" type="text" placeholder="Last Name" required>
+            <input class="form-control" id="lname" name="lname" type="text" placeholder="Last Name" required>
         </div>
         <div>
             <label>Mobile Number</label>
-            <input id="mobileNo" name="mobileNo" type="tel" placeholder="Mobile Number" required>
+            <input class="form-control" id="mobileNo" name="mobileNo" type="tel" placeholder="Mobile Number" required>
         </div>
         <div>
             <label>Address</label>
-            <input id="address" name="address" type="text" placeholder="Address" required>
+            <input class="form-control" id="address" name="address" type="text" placeholder="Address" required>
         </div>
         <div>
             <label>NIC Number</label>
-            <input id="nicNo" name="nicNo" type="text" placeholder="NIC Number" required>
+            <input class="form-control" id="nicNo" name="nicNo" type="text" placeholder="NIC Number" required>
         </div>
 <!--        <input type="hidden" name="submitted" value="Submitted">-->
         <div>
-            <input type="submit" value="Signup">
+            <input class="btn btn-primary"type="submit" value="Signup">
         </div>
     </form>
 </div>
+</div>
+<?php include 'footerScripts.php'?>
 </body>
 </html>
