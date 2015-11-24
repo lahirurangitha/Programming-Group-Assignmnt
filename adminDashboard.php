@@ -7,6 +7,9 @@
  */
 
 require_once 'connect.php';
+if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
+    Redirect::to('index.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
