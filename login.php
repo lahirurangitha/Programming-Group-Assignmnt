@@ -46,9 +46,10 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
                     <div class="gap">
                         <input class="btn btn-primary col-lg-12" type="submit" value="Signin">
                     </div>
+                    <div class="gap">
+                        <a href="forgotPassword.php">Forgot Password</a>
+                    </div>
                 </form>
-                <br>
-                <br>
                 <div class="gap">
                     <button class="btn btn-default col-lg-12"><a>Signup</a></button>
                 </div>
