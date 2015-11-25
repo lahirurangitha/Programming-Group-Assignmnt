@@ -21,8 +21,9 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 <?php include 'navBar.php'?>
 <div>
 
-    <?php echo 'chathuranga' ?>
-    <?php echo 'sandun' ?>f
+
+
+
 
 
 </div>
