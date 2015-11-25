@@ -21,8 +21,8 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 <?php include 'navBar.php'?>
 <div class="container-fluid backgroundImg">
     <?php include 'adminSidebar.php'?>
-    <div>
-
+    <div class="container col-lg-9">
+<!--       write content in this division-->
     </div>
 
 </div>

@@ -6,7 +6,7 @@
  * Time: 2:17 PM
  */
 ?>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="margin: 0px">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
