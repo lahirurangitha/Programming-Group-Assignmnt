@@ -53,7 +53,7 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
 
 }else{
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = hash("sha256",$_POST['password']);
     $tdb = DB::getInstance();
     $tdb->query("select username from user where username = ? AND password = ?",array($username,$password));
     if($tdb->count()){
@@ -72,13 +72,10 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
             $_SESSION['student'] = true;
             Redirect::to('studentDashboard.php');
         }
-//        echo 'Login Successfull';
-//        echo "<a href='logout.php'>logout</a>";
     }else{
-        echo '<div class="alert alert-danger">Credentials doesn\'t match</div>';
+        echo '<script type="text/javascript">alert("Credentials does not match.");</script>';
     }
 }
-
 
 ?>
         </div>

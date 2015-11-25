@@ -18,7 +18,8 @@ if(isset($_POST['username'])) {
     }else{
         if ($_POST['password'] == $_POST['repassword']) {
             $username = $_POST['username'];
-            $password = $_POST['password'];
+//            $password = $_POST['password'];
+            $password = hash("sha256",$_POST['password']);
             $email = $_POST['email'];
             $utype = $_POST['utype'];
             $fname = $_POST['fname'];
