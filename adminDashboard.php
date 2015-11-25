@@ -22,7 +22,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 <div>
 
     <?php echo 'chathuranga' ?>
-    <?php echo 'sandun' ?>
+    <?php echo 'sandun' ?>f
 
 
 </div>
