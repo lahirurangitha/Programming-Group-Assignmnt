@@ -58,6 +58,7 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
     $tdb->query("select username from user where username = ? AND password = ?",array($username,$password));
     if($tdb->count()){
         $_SESSION['isLoggedIn'] = true;
+        $_SESSION['currentUser'] = $username;
         $utype = DB::getInstance();
         $utype->query("select utype from user where username = ?",array($username));
         $temp = $utype->results()[0]->utype;

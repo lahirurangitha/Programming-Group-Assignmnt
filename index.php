@@ -27,9 +27,21 @@ if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
 </head>
 <body>
 <?php include 'navBar.php'?>
-<div>
-<h1>Home | page</h1>
+<div class="container-fluid backgroundImg">
+<div class="container">
+<!--    <div>-->
+<!--        <h1>Welcome to </h1>-->
+<!--    </div>-->
+    <div>
+        <img src="images/logo.png" height="150px">
+    </div>
+    <div>
+        <h1>Welcome to Vishwa Education Center</h1>
+    </div>
+</div>
+    
 </div>
 <?php include 'footerScripts.php'?>
+<?php include 'footer.php'?>
 </body>
 </html>

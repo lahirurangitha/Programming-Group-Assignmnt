@@ -102,6 +102,7 @@ if(isset($_POST['username'])) {
             <label>NIC Number</label>
             <input class="form-control" id="nicNo" name="nicNo" type="text" placeholder="NIC Number" required>
         </div>
+        <br>
 <!--        <input type="hidden" name="submitted" value="Submitted">-->
         <div>
             <input class="btn btn-primary"type="submit" value="Signup">
