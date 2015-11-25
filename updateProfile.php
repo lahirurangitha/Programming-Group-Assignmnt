@@ -44,41 +44,41 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
             ?>
             <br>
             <div class="jumbotron col-lg-6">
-                <h1>Update</h1>
+                <h3>Update</h3>
                 <form action="updateConfirm.php" method="post">
-                    <div>
+                    <div class="gap">
                         <label>Username</label>
                         <input class="form-control" name="u_username" type="text" value="<?php echo $currUser;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>Password</label>
                         <input class="form-control" name="u_password" type="password" value="<?php echo $password;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>Re-Password</label>
                         <input class="form-control" name="u_repassword" type="password" value="<?php echo $password;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>E-Mail</label>
                         <input class="form-control" name="u_email" type="email" placeholder="E-mail" value="<?php echo $email;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>First Name</label>
                         <input class="form-control" name="u_fname" type="text" placeholder="First Name" value="<?php echo $fname;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>Last Name</label>
                         <input class="form-control" name="u_lname" type="text" placeholder="Last Name" value="<?php echo $lname;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>Mobile Number</label>
                         <input class="form-control" name="u_mobileNo" type="tel" placeholder="Mobile Number" value="<?php echo $mnumber;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>Address</label>
                         <input class="form-control" name="u_address" type="text" placeholder="Address" value="<?php echo $address;?>">
                     </div>
-                    <div>
+                    <div class="gap">
                         <label>NIC Number</label>
                         <input class="form-control" name="u_nicNo" type="text" placeholder="NIC Number" value="<?php echo $nic?>">
                     </div>
