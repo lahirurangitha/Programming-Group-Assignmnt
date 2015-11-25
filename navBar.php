@@ -54,7 +54,7 @@
                             <a href="#">USERS</a>
                         </li>
                         <li>
-                            <a href="#">COURSE</a>
+                            <a href="#">COURSES</a>
                         </li>
 
                     <?php
