@@ -20,8 +20,10 @@ if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
 </head>
 <body>
 <?php include 'navBar.php'?>
+<div class="container-fluid backgroundImg">
     <div class="container">
-        <div class="jumbotron col-lg-6 col-lg-offset-3">
+        <br>
+        <div class="jumbotron col-lg-4 col-lg-offset-4">
 <?php
 if(!isset($_POST['username']) || !isset($_POST['password'])){
     ?>
@@ -72,7 +74,7 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
 //        echo 'Login Successfull';
 //        echo "<a href='logout.php'>logout</a>";
     }else{
-        echo '<script type="text/javascript">alert("Credentials doesn\'t match")</script>';
+        echo '<div class="alert alert-danger">Credentials doesn\'t match</div>';
     }
 }
 
@@ -80,6 +82,8 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
 ?>
         </div>
     </div>
+    </div>
     <?php include 'footerScripts.php'?>
+<?php include 'footer.php'?>
 </body>
 </html>

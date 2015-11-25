@@ -51,7 +51,9 @@ if(isset($_POST['username'])) {
 </head>
 <body>
 <?php include 'navBar.php'?>
-<div class="container">
+<div class="container-fluid backgroundImg">
+    <div class="container">
+        <br>
 <div class="jumbotron col-lg-6 col-lg-offset-3" id="regForm">
     <h3>Signup</h3>
     <form action="" method="post" class="form-horizontal">
@@ -107,6 +109,8 @@ if(isset($_POST['username'])) {
     </form>
 </div>
 </div>
+    </div>
 <?php include 'footerScripts.php'?>
+<?php include 'footer.php'?>
 </body>
 </html>

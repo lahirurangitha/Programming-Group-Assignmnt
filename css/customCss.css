@@ -1,11 +1,10 @@
 .backgroundImg{
     background-image: url("../images/background-hd.jpg");
-    /*flex-basis: 100%;*/
     background-repeat: round;
     min-width: 100%;
     min-height: 550px;
     margin: 0px;
-    /*height: 100%;*/
+
 
 }
 .gap{
