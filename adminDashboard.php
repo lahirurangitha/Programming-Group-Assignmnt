@@ -21,6 +21,9 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 <?php include 'navBar.php'?>
 <div>
 
+    <?php echo 'chathuranga' ?>
+
+
 </div>
 <?php include 'footerScripts.php'?>
 </body>
