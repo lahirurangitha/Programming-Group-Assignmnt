@@ -44,6 +44,19 @@
                         <li>
                             <a href="adminDashboard.php">DASHBOARD</a>
                         </li>
+                        <li>
+                            <a href="#">STUDENT</a>
+                        </li>
+                        <li>
+                            <a href="#">TEACHER</a>
+                        </li>
+                        <li>
+                            <a href="#">USERS</a>
+                        </li>
+                        <li>
+                            <a href="#">COURSE</a>
+                        </li>
+
                     <?php
                     }elseif(isset($_SESSION['teacher'])&& $_SESSION['teacher']==true){
                         ?>
