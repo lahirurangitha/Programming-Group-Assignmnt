@@ -17,17 +17,20 @@
                     <a href="teacherDashboard.php"><i class="fa fa-dashboard fa-2x active"></i> Teacher Dashboard</a>
                 </li>
                 <li>
-                    <a href=""><i class=""></i>Test</a>
+                    <a href=""><i class=""></i> Update Profile</a>
                 </li>
-                <!--                <li>-->
-                <!--                    <a href="editPayment.php"><i class=""></i>Update Payment Details</a>-->
-                <!--                </li>-->
-                <!--                <li>-->
-                <!--                    <a href="notif_main_forum.php"><i class=""></i>Notification Forum</a>-->
-                <!--                </li>-->
-                <!--                <li>-->
-                <!--                    <a href="admin_searchUser.php"><i class=""></i>Accounts Manager</a>-->
-                <!--                </li>-->
+<!--                <li>-->
+<!--                    <a href=""><i class=""></i> Students</a>-->
+<!--                </li>-->
+                <li>
+                    <a href=""><i class=""></i> Courses</a>
+                </li>
+                <li>
+                    <a href=""><i class=""></i> Lectures</a>
+                </li>
+                <li>
+                    <a href=""><i class=""></i> Discussion Forum</a>
+                </li>
             </ul>
 
         </div>

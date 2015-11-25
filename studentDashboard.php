@@ -19,9 +19,17 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 </head>
 <body>
 <?php include 'navBar.php'?>
-<div>
+<div class="container-fluid backgroundImg">
+    <?php include 'studentSidebar.php'?>
+    <div class="container col-lg-9">
 
+        <!--       write content in this division-->
+
+
+
+    </div>
 </div>
 <?php include 'footerScripts.php'?>
+<?php include 'footer.php'?>
 </body>
 </html>

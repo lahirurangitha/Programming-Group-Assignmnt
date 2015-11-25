@@ -14,20 +14,20 @@
                     <img src="images/admin.jpg" class="user-image " height="150px"/>
                 </li>
                 <li>
-                    <a href="adminDashboard.php"><i class="fa fa-dashboard fa-2x active"></i> Admin Dashboard</a>
+                    <a href="adminDashboard.php"><i class="fa fa-dashboard fa-2x"></i> Admin Dashboard</a>
                 </li>
                 <li>
-                    <a href="updateProfile.php"><i class=""></i>Update Profile</a>
+                    <a href="updateProfile.php"><i class=""></i> Update Profile</a>
                 </li>
-<!--                <li>-->
-<!--                    <a href="editPayment.php"><i class=""></i>Update Payment Details</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a href="notif_main_forum.php"><i class=""></i>Notification Forum</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a href="admin_searchUser.php"><i class=""></i>Accounts Manager</a>-->
-<!--                </li>-->
+                <li>
+                    <a href="#"><i class=""></i> Manage User Accounts</a>
+                </li>
+                <li>
+                    <a href="#"><i class=""></i> Accept/Reject Registration</a>
+                </li>
+                <li>
+                    <a href="#"><i class=""></i> Accept/Reject Tutor Enrollment</a>
+                </li>
             </ul>
 
         </div>

@@ -6,7 +6,7 @@
  * Time: 1:36 PM
  */
 ?>
-<div class="col-lg-3">
+<div class="col-lg-3" >
     <nav class="navbar-default navbar-side main-sidebar" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
@@ -14,20 +14,20 @@
                     <img src="images/User.png" class="user-image " height="150px"/>
                 </li>
                 <li>
-                    <a href="studentDashboard.php"><i class="fa fa-dashboard fa-2x active"></i>Student Dashboard</a>
+                    <a href="studentDashboard.php"><i class="fa fa-dashboard fa-2x"></i> Student Dashboard</a>
                 </li>
                 <li>
-                    <a href=""><i class=""></i>Test</a>
+                    <a href=""><i class=""></i> Courses</a>
                 </li>
-                <!--                <li>-->
-                <!--                    <a href="editPayment.php"><i class=""></i>Update Payment Details</a>-->
-                <!--                </li>-->
-                <!--                <li>-->
-                <!--                    <a href="notif_main_forum.php"><i class=""></i>Notification Forum</a>-->
-                <!--                </li>-->
-                <!--                <li>-->
-                <!--                    <a href="admin_searchUser.php"><i class=""></i>Accounts Manager</a>-->
-                <!--                </li>-->
+                <li>
+                    <a href="#"><i class=""></i> Lectures</a>
+                </li>
+                <li>
+                    <a href="#"><i class=""></i> Students</a>
+                </li>
+                <li>
+                    <a href="#"><i class=""></i> Discussion Forum</a>
+                </li>
             </ul>
 
         </div>
