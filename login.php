@@ -27,26 +27,34 @@ if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
 <?php
 if(!isset($_POST['username']) || !isset($_POST['password'])){
     ?>
-
-            <h3>Signin</h3>
-            <form action="" method="post" class="form-horizontal">
-                <div class="gap">
-                    <label>Username</label>
-                    <input class="form-control" id="username" name="username" type="text" placeholder="username" required>
-                </div>
-                <div class="gap">
-                    <label>Password</label>
-                    <input class="form-control" id="password" name="password" type="password" placeholder="password" required>
-                </div>
-                <div class="gap">
-                    <input class="btn btn-primary col-lg-12" type="submit" value="Signin">
-                </div>
-            </form>
-            <br>
-            <br>
-            <div class="gap">
-                <button class="btn btn-default col-lg-12"><a>Signup</a></button>
+            <div class="col-lg-12 ">
+                <img src="images/logo.png" height="75px">
             </div>
+            <div class="col-lg-12">
+                <h3>Signin</h3>
+            </div>
+            <div class="col-lg-12">
+                <form action="" method="post" class="form-horizontal">
+                    <div class="gap">
+                        <label>Username</label>
+                        <input class="form-control" id="username" name="username" type="text" placeholder="username" required>
+                    </div>
+                    <div class="gap">
+                        <label>Password</label>
+                        <input class="form-control" id="password" name="password" type="password" placeholder="password" required>
+                    </div>
+                    <div class="gap">
+                        <input class="btn btn-primary col-lg-12" type="submit" value="Signin">
+                    </div>
+                </form>
+                <br>
+                <br>
+                <div class="gap">
+                    <button class="btn btn-default col-lg-12"><a>Signup</a></button>
+                </div>
+            </div>
+
+
 
 
 <?php
