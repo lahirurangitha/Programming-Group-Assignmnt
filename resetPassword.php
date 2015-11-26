@@ -54,7 +54,7 @@ if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
                 $updatePassword = DB::getInstance();
                 $updatePassword->query("Update user set password = ? WHERE username = ?",array($hashedPassword,$_SESSION['fp_username']));
                 if($updatePassword->count()){
-                    echo "database updated";
+//                    echo "database updated";
                 }
             }
 
