@@ -24,9 +24,6 @@ if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
     <div class="container">
         <br>
         <div class="jumbotron col-lg-4 col-lg-offset-4">
-<?php
-if(!isset($_POST['username']) || !isset($_POST['password'])){
-    ?>
             <div class="col-lg-12 ">
                 <img src="images/logo.png" height="75px">
             </div>
@@ -55,12 +52,8 @@ if(!isset($_POST['username']) || !isset($_POST['password'])){
                 </div>
             </div>
 
-
-
-
 <?php
-
-}else{
+if(isset($_POST['username']) && isset($_POST['password'])){
     $username = $_POST['username'];
     $password = hash("sha256",$_POST['password']);
     $tdb = DB::getInstance();

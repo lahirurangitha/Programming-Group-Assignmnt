@@ -10,6 +10,7 @@ spl_autoload_register(function ($class) {
     include 'classes/' . $class . '.php';
 });
 session_start();
+ob_start();
 $connect = DB::getInstance();
 //$host = 'localhost';
 //$username = 'root';
