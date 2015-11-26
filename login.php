@@ -6,6 +6,7 @@
  * Time: 3:48 PM
  */
 
+
 require_once 'connect.php';
 if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
     Redirect::to('index.php');

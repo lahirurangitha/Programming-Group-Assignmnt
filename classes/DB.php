@@ -61,4 +61,9 @@ class DB {
     }
 
 
+    //chathuranga
+    public function lastId(){
+        return $this->_pdo->lastInsertId();
+    }
+
 }
