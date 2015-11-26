@@ -27,17 +27,17 @@
                 </li>
                 <li><a href="module%20page.php"><i class=""></i>Models</a>
                     <ul>
-                    <li><a href=php"><i class=""></i>Add Models</a></li>
-                        <li><a href="acceptRegistration.php"><i class=""></i>Info Models</a></li>
-                        <li><a href="acceptRegistration.php"><i class=""></i>Update Models</a></li>
-                        <li><a href="acceptRegistration.php"><i class=""></i>Delete Models</a></li>
+                    <li><a href=InsertModule.php"><i class=""></i>Add Models</a></li>
+                        <li><a href="searchModule.php"><i class=""></i>Info Models</a></li>
+                        <li><a href="UpdateModule.php"><i class=""></i>Update Models</a></li>
+                        <li><a href="DeleteModule.php"><i class=""></i>Delete Models</a></li>
                         </ul>
                 </li>
                 <li><a href="coursePage.php"><i class=""></i>Course</a>
                     <ul>
-                        <li><a href="acceptRegistration.php"><i class=""></i>Add Course</a></li>
-                        <li><a href="acceptRegistration.php"><i class=""></i>Info Course</a></li>
-                        <li><a href="acceptRegistration.php"><i class=""></i>Update Course</a></li>
+                        <li><a href="InsertCourse.php"><i class=""></i>Add Course</a></li>
+                        <li><a href="searchCourse.php"><i class=""></i>Info Course</a></li>
+                        <li><a href="UpdateCourse.php"><i class=""></i>Update Course</a></li>
                         <li><a href="acceptRegistration.php"><i class=""></i>Delete Course</a></li>
                     </ul>
                 </li>
