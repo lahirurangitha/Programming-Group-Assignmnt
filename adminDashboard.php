@@ -5,6 +5,8 @@
  * Date: 11/24/2015
  * Time: 2:14 PM
  */
+
+echo 'sandun';
 require_once 'connect.php';
 if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
     Redirect::to('index.php');
