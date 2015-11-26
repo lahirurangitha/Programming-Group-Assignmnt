@@ -36,7 +36,7 @@ if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
                 $randomString .= $characters[rand(0, $charactersLength - 1)];
             }
             //
-            echo $randomString;
+//            echo $randomString;
             $hashedPassword = hash("sha256",$randomString);
 
             // the message
