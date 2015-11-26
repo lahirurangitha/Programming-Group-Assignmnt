@@ -25,6 +25,11 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 <!--       write content in this division-->
     </div>
 
+
+
+
+
+
 </div>
 <?php include 'footerScripts.php'?>
 <?php include 'footer.php'?>
