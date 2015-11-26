@@ -38,7 +38,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 <?php include 'navBar.php'?>
 <div class="container-fluid backgroundImg">
     <?php include 'adminSidebar.php'?>
-    <div class="container col-lg-8">
+    <div class="container jumbotron col-lg-8">
         <h3><center>Accept User Registration</center></h3>
         <br>
         <br>
@@ -149,7 +149,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 
             </div>
             <div class="tab-pane" id="two">
-                <table class="table table-responsive" >
+                <table class="table table-responsive" bgcolor="#fffaf0">
                     <thead>
                     <tr>
                         <th>User ID</th>
@@ -247,8 +247,8 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
             </div>
         </div>
         <button type="submit" class="btn btn-success col-lg-12">
-            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-            Submit</button>
+               <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                 Accept Selected Registrations</button>
 
     </div>
 
