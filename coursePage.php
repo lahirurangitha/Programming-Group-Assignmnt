@@ -32,7 +32,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
                     <div class="caption">
                         <center><h3>Insert A Course</h3></center>
                         <p>.fsafsafdafdfsadfa..</p>
-                        <p><a href="#" class="btn btn-primary center-block" role="button">Insert</a> </p>
+                        <p><a href="InsertCourse.php" class="btn btn-primary center-block" role="button">Insert</a> </p>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
                     <div class="caption">
                         <center><h3>Info  Course</h3></center>
                         <p>.fsafsafdafdfsadfa..</p>
-                        <p><a href="#" class="btn btn-primary center-block" role="button">Search</a> </p>
+                        <p><a href="searchCourse.php" class="btn btn-primary center-block" role="button">Search</a> </p>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
                     <div class="caption">
                         <center><h3>Update A Course</h3></center>
                         <p>.fsafsafdafdfsadfa..</p>
-                        <p><a href="#" class="btn btn-primary center-block" role="button">Update</a> </p>
+                        <p><a href="UpdateCourse.php" class="btn btn-primary center-block" role="button">Update</a> </p>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
                     <div class="caption">
                         <center><h3>Delete A Course</h3></center>
                         <p>.fsafsafdafdfsadfa..</p>
-                        <p><a href="#" class="btn btn-primary center-block" role="button">Delete</a> </p>
+                        <p><a href="DeleteCourse.php" class="btn btn-primary center-block" role="button">Delete</a> </p>
                     </div>
                 </div>
             </div>
