@@ -40,14 +40,17 @@ if(isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']==true){
                 $checkUsername->query('select username from user WHERE username = ?',array($fp_username));
                 if($checkUsername->count() != 0){
 //                    echo $checkUsername->results()[0]->username;
+                    $_SESSION['fp_username'] = $fp_username;
                     ?>
                     <br>
                     <div>
                         <lable>Username Found</lable><br>
                         <label class="alert alert-danger">Click The Button Below To Reset Your Password. New Password Will Be Sent To Your Email. </label>
                     </div>
-                    <button class="btn btn-danger" name="RP">Reset Password</button>
-                <?php
+                    <a href="resetPassword.php"><button class="btn btn-danger">Reset Password</button></a>
+
+                    <?php
+
                 }else {
                     echo "<script type='text/javascript'>alert('Username does not exist');</script>";
                 }
