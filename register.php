@@ -31,6 +31,14 @@ if(isset($_POST['username'])) {
             $regUser = DB::getInstance();
             $regUser->query("insert into user(username,password,email,utype,fname,lname,address,mnumber,nicnumber) values(?,?,?,?,?,?,?,?,?)",array($username,$password,$email,$utype,$fname,$lname,$address,$mnumber,$nicnumber));
             if($regUser->count()){
+
+                //from chathurange
+                $lstID = (int)$regUser->lastId();
+                //echo $lstID;
+
+                $regUser->query("insert into acceptregistration(userID, status) VALUES (?,?)",array($lstID,'waiting'));
+                //end chathuranga
+
                 echo '<script type="text/javascript">alert("Registration Successful");</script>';
             }else{
                 echo '<script type="text/javascript">alert("Registration failed");</script>';
