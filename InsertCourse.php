@@ -10,6 +10,33 @@ require_once 'connect.php';
 if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
     Redirect::to('index.php');
 }
+
+
+if(isset($_POST['course_number'])  && isset($_POST['course_name'])  && isset($_POST['duration'])  && isset($_POST['credits'])  && isset($_POST['qulification'])  ){
+    $courseNumber = $_POST['course_number'];
+    $courseName = $_POST['course_name'];
+    $duration = $_POST['duration'];
+    $credits = $_POST['credits'];
+    $qulification = $_POST['qulification'];
+
+    if(!empty($courseNumber) && !empty($courseName) && !empty($duration) && !empty($credits) && !empty($qulification)) {
+
+
+        $in = DB::getInstance();
+        $q = $in->query("insert into course(number,name, duration, credits, qulification) VALUES (?,?,?,?,?)", array($courseNumber, $courseName, $duration, $credits, $qulification));
+        if ($q) {
+            echo '<script type="text/javascript">alert("Insert Successful");</script>';
+        } else {
+            echo '<script type="text/javascript">alert("insertn un-successful");</script>';
+        }
+    }else{
+        echo '<script type="text/javascript">alert("Please fill all fields");</script>';
+    }
+
+
+
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -65,6 +92,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 
             </form>
         </div>
+
 
     </div>
 
