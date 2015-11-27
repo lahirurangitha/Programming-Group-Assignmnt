@@ -54,7 +54,7 @@ if(isset($_POST['course_number'])  && isset($_POST['course_name'])  && isset($_P
         <div class="jumbotron col-lg-4 col-lg-offset-4" id="regForm">
             <h3>Insert Cource</h3>
             <br>
-            <form action="" method="post" class="form-horizontal">
+            <form  method="post" class="form-horizontal">
                 <div class="form-group" >
                     <label for="exampleInputEmail1">Course Number</label>
                     <input type="text" class="form-control" id="inputCourseNumber" name="course_number" placeholder="">

@@ -25,24 +25,24 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
     <div class="container col-lg-9">
         <!--       write content in this division-->
 
-        <div class="jumbotron col-lg-12 ">
+        <div class="container  ">
             <?php
             if(!isset($_POST['course_number']) || !isset($_POST['course_name']) || !isset($_POST['duration']) ||  !isset($_POST['qulification']) ){
                 ?>
 
                 <h3>Info Courses</h3>
                 <br>
-                <form action="" method="post" class="form-inline">
-                    <div class="form-group col-lg-2 col-lg-offset-1" >
+                <form action="infocourse.php" method="get" class="form-horizontal">
+                    <div class="form-group col-lg-4 col-lg-offset-0" >
                         <label for="exampleInputEmail1">Course Number</label>
                         <input type="text" class="form-control" id="inputCourseNumber" name="course_number" placeholder="">
                     </div>
-                    <div class="form-group col-lg-2 ">
+                    <div class="form-group col-lg-4 ">
                         <label for="exampleInputPassword1">Course Name</label>
                         <input type="text" class="form-control" id="inputCourseName" name="course_name">
                     </div>
 
-                    <div class="form-group col-lg-2">
+                    <div class="form-group col-lg-4">
 
                         <label for="exampleInputPassword1">Duration</label>
                         <div class="input-group">
@@ -51,20 +51,20 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
                         </div>
                     </div>
 
-                    <div class="form-group col-lg-2">
+                    <div class="form-group col-lg-4">
                         <label for="exampleInputPassword1">Credits</label>
                         <input type="number" class="form-control col-lg-2" id="inputCredits" placeholder="" name="credits" width="150px">
                     </div>
 
-                    <div class="form-group col-lg-2">
+                    <div class="form-group col-lg-4">
                         <label for="exampleInputPassword1">Qualification</label>
                         <input type="text" class="form-control" id="inputQuaification" name="qulification" placeholder="">
                     </div>
 
-                    <label class="col-lg-offset-10 col-lg-1" "></label>
+                    <label class="col-lg-12" "></label>
 
-                    <button type="submit" class="btn btn-success col-lg-offset-5">
-                        <span class="glyphicon glyphicon-search col-lg-5" aria-hidden="true"></span>
+                    <button type="submit" class="form-group col-lg-9 btn btn-success ">
+                        <span class="glyphicon glyphicon-search " aria-hidden="true"></span>
                         Search</button>
 
 

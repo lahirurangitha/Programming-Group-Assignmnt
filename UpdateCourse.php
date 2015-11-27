@@ -10,6 +10,21 @@ require_once 'connect.php';
 if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
     Redirect::to('index.php');
 }
+
+$in = DB::getInstance();
+$a = "";
+if(isset($_POST['updateButton'])){
+    /*if(isset($_POST['course_number'])){
+        $courseNumber = $_POST['course_number'];
+        if(!empty($courseNumber)){
+            $a = "test";
+        }
+    }*/
+    echo "test";
+
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,14 +47,14 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
                     <label for="exampleInputEmail1">Course Number</label>
                     <input type="text" class="form-control" id="inputCourseNumber" name="course_number" placeholder="">
                     <br>
-                    <button type="submit" class="btn btn-success col-lg-12 col-lg-offset-0">
+                    <button type="submit" class="btn btn-success col-lg-12 col-lg-offset-0" name="searchButton">
                         <span class="glyphicon glyphicon-search col-lg-1" aria-hidden="true"></span>
                         Search</button>
                 </div>
                 <div class="form-group">
 
                     <label for="exampleInputPassword1">Course Name</label><br>
-                    <label>Sinhala</label>
+                    <label>bhg<?php echo $a?></label>
 
                     <input type="text" class="form-control" id="inputCourseName" name="course_name">
                 </div>
@@ -69,7 +84,7 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
                     <input type="text" class="form-control" id="inputQuaification" name="qulification" placeholder="">
                 </div>
 
-                <button type="submit" class="btn btn-success col-lg-12" >
+                <button type="submit" class="btn btn-success col-lg-12" name="updateButton">
                     <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                     Update Course</button>
 
