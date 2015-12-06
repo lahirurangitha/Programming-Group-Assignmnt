@@ -14,13 +14,30 @@ if(!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn']==false){
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Administrator</title>
+<!--    <title>Administrator</title>-->
+    <?php
+    if(isset($_SESSION['admin']) && $_SESSION['admin']==true){
+        echo "<title>Administrator</title>";
+    }elseif(isset($_SESSION['teacher']) && $_SESSION['teacher']==true){
+        echo "<title>Teacher</title>";
+    }elseif(isset($_SESSION['student']) && $_SESSION['student']==true){
+        echo "<title>Student</title>";
+    }
+    ?>
     <?php include 'headerScripts.php'?>
 </head>
 <body>
 <?php include 'navBar.php'?>
 <div class="container-fluid backgroundImg">
-    <?php include 'adminSidebar.php'?>
+    <?php
+    if(isset($_SESSION['admin']) && $_SESSION['admin']==true){
+        include 'adminSidebar.php';
+    }elseif(isset($_SESSION['teacher']) && $_SESSION['teacher']==true){
+        include 'teacherSidebar.php';
+    }elseif(isset($_SESSION['student']) && $_SESSION['student']==true){
+        include 'studentSidebar.php';
+    }
+    ?>
     <div class="container col-lg-9">
         <?php
 //            echo $_SESSION['username'];

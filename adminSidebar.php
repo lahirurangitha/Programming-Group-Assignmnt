@@ -26,6 +26,12 @@
                     <a href="acceptRegistration.php"><i class=""></i> Accept/Reject Registration</a>
                 </li>
                 <li>
+                    <a href="coursePage.php"><i class=""></i> Add/Remove course</a>
+                </li>
+                <li>
+                    <a href="module%20page.php"><i class=""></i> Add/Remove module</a>
+                </li>
+                <li>
                     <a href="#"><i class=""></i> Accept/Reject Tutor Enrollment</a>
                 </li>
             </ul>

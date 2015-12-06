@@ -17,13 +17,13 @@
                     <a href="teacherDashboard.php"><i class="fa fa-dashboard fa-2x active"></i> Teacher Dashboard</a>
                 </li>
                 <li>
-                    <a href=""><i class=""></i> Update Profile</a>
+                    <a href="updateProfile.php"><i class=""></i> Update Profile</a>
                 </li>
 <!--                <li>-->
 <!--                    <a href=""><i class=""></i> Students</a>-->
 <!--                </li>-->
                 <li>
-                    <a href=""><i class=""></i> Courses</a>
+                    <a href="enrolementRequest.php"><i class=""></i> Course Enrolment Requests</a>
                 </li>
                 <li>
                     <a href=""><i class=""></i> Lectures</a>

@@ -35,3 +35,11 @@
 <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
 <link rel="stylesheet" href="css/customCss.css">
+
+<!--sweet alert-->
+
+<!-- This is what you need -->
+<script src="sweetalert/dist/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="sweetalert/dist/sweetalert.css">
+<script src="js/alerts.js"></script>
+<!--.......................-->
