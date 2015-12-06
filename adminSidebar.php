@@ -23,7 +23,7 @@
                     <a href="#"><i class=""></i> Manage User Accounts</a>
                 </li>
                 <li>
-                    <a href="#"><i class=""></i> Accept/Reject Registration</a>
+                    <a href="acceptRegistration.php"><i class=""></i> Accept/Reject Registration</a>
                 </li>
                 <li>
                     <a href="#"><i class=""></i> Accept/Reject Tutor Enrollment</a>
